@@ -1,6 +1,16 @@
+## source master
+source /etc/inputrc
+
+## expand commands
+#set -x
+
 ## single tab-completion
 set show-all-if-ambiguous on
 
 ## line wrap on window resize
 shopt -s checkwinsize
 
+## do not bell on tab-completion
+set bell-style none
+
+## EOF ##
