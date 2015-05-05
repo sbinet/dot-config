@@ -1,0 +1,6 @@
+## single tab-completion
+set show-all-if-ambiguous on
+
+## line wrap on window resize
+shopt -s checkwinsize
+
