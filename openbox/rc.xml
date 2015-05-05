@@ -230,10 +230,10 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>/usr/bin/emacs</command>
+		  <command>~/bin/vim-terminal</command>
         <startupnotify>
           <enabled>yes</enabled>
-          <name>emacs</name>
+          <name>vim</name>
         </startupnotify>
       </action>
     </keybind>
