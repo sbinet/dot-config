@@ -27,3 +27,31 @@ export PATH=$GOPATH/bin:$PATH
 # local scripts/binaries
 export PATH=$HOME/bin:$PATH
 
+## general use
+alias scpresume="rsync --partial --progress --rsh=ssh"
+
+## switch overlay displays
+# laptop screen
+alias switch2LCD="xvattr -a XV_CRTC -v 0"
+# external screen
+alias switch2EXT="xvattr -a XV_CRTC -v 1"
+
+## ssh aliases
+alias lxplus="ssh -YC binet@lxplus.cern.ch"
+
+## FUSE
+alias  flx="sshfs binet@lxplus.cern.ch:/afs/cern.ch/user/b/binet /home/binet/fuse-cern"
+alias uflx="fusermount -u /home/binet/fuse-cern"
+
+## get backspace to work everywhere
+## see: http://www.ibb.net/~anne/keyboard/keyboard.html
+if tty --quiet ; then
+	stty erase '^?'
+fi
+
+## clear terminal buffers
+alias cls="echo -ne '\033c'"
+
+## for direnv. needs to be LAST
+eval "$(direnv hook bash)"
+
