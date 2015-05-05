@@ -17,10 +17,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 	source /usr/share/bash-completion/bash_completion
 fi
 
-# if [ -f /usr/lib/python3.4/site-packages/powerline/bindings/bash/powerline.sh ]; then
-#     source /usr/lib/python3.4/site-packages/powerline/bindings/bash/powerline.sh
-# fi
-
 # for go
 export GOPATH=$HOME/dev/go/gocode
 export PATH=$GOPATH/bin:$PATH
