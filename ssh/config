@@ -1,0 +1,112 @@
+Host *
+  ForwardX11 no
+  ForwardAgent no
+  GSSAPIAuthentication no
+  GSSAPIDelegateCredentials no
+  Compression yes
+
+Host svn.cern.ch svn
+  IdentityFile ~/.ssh/id_dsa
+  PubkeyAuthentication yes
+  PasswordAuthentication yes
+  GSSAPIAuthentication yes
+  GSSAPIDelegateCredentials yes
+  Protocol 2
+  ForwardX11 no
+  ForwardX11Trusted no
+  ControlMaster yes
+  ControlPersist yes
+
+# Host voatlas51.cern.ch
+#   IdentityFile ~/.ssh/id_rsa
+#   Protocol 2
+#   User binet
+#   ProxyCommand ssh -Y lxvoadm.cern.ch 'exec 3<>/dev/tcp/%h/%p; cat <&3 & cat >&3;kill $!'
+#   ForwardX11 yes
+#   ForwardX11Trusted no
+#   #GSSAPITrustDns yes
+#   GSSAPIAuthentication yes
+#   GSSAPIDelegateCredentials yes
+
+Host lxvoadm*.cern.ch
+  Protocol 2
+  IdentityFile ~/.ssh/id_rsa
+  Hostname lxvoadm.cern.ch
+  #ControlMaster auto
+  #ControlPath ~/.ssh/master-%r@%h:%p
+  PasswordAuthentication yes
+  PubkeyAuthentication no
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  #GSSAPITrustDns yes
+  GSSAPIAuthentication no
+  GSSAPIDelegateCredentials no
+
+Host lx*cern.ch
+  #Hostname lxplus.cern.ch
+  #GSSAPITrustDns yes
+  #GSSAPIAuthentication yes
+  #GSSAPIDelegateCredentials yes
+  #GSSAPIAuthentication  no
+  #GSSAPIDelegateCredentials no
+  IdentityFile ~/.ssh/id_rsa
+  Protocol 2
+  User binet
+  #ControlMaster auto
+  PasswordAuthentication yes
+  PubkeyAuthentication no
+  ForwardX11 yes
+  ForwardX11Trusted yes
+  GSSAPIAuthentication yes
+  GSSAPIDelegateCredentials yes
+
+Host atlas-sw.cern.ch atlas-sw isscvs.cern.ch isscvs
+  Protocol 2
+  IdentityFile ~/.ssh/id_rsa
+  Hostname atlas-sw.cern.ch
+  #ControlMaster auto
+  PasswordAuthentication yes
+  PubkeyAuthentication yes
+  ForwardX11 no
+  #GSSAPITrustDns yes
+  #GSSAPIAuthentication yes
+  #GSSAPIDelegateCredentials yes
+
+Host vagrant*
+  User vagrant
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile ~/.ssh/vagrant
+  IdentitiesOnly yes
+
+Host binet-ubuntu-64b binet-ubuntu-64b.cern.ch
+  Protocol 2
+  User ubuntu
+  HostName binet-ubuntu-64b.cern.ch
+#  IdentityFile ~/.ssh/id_rsa.pub
+  IdentityFile ~/.ssh/cern-openstack
+  PubkeyAuthentication yes
+  PasswordAuthentication no
+  GSSAPIAuthentication yes
+  GSSAPIDelegateCredentials yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
+Host git.in2p3.fr
+  User sbinet
+  Protocol 2
+  IdentityFile ~/.ssh/lsst-calcul-git
+  Hostname git.in2p3.fr
+  ControlMaster auto
+  PasswordAuthentication no
+  PubkeyAuthentication yes
+  ForwardX11 no
+  #GSSAPITrustDns yes
+  #GSSAPIAuthentication yes
+  #GSSAPIDelegateCredentials yes
+
+Host ccage*.in2p3.fr
+  IdentityFile ~/.ssh/id_dsa
+  Protocol 2
+  User sbinet
