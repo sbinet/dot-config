@@ -1,0 +1,35 @@
+[core]
+	editor = vim
+	excludesfile = /home/binet/.gitignore_global
+        
+[user]
+	email = binet@cern.ch
+	name = Sebastien Binet
+[push]
+	default = matching
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[credential]
+	helper = cache --timeout=3600
+
+[alias]
+    ci = commit
+    co = checkout
+    l = log --oneline --graph --decorate --all
+    lc = log ORIG_HEAD.. --stat --no-merges
+    undo = reset --hard
+[url "git@github.com:sbinet/"]
+	insteadOf = https://github.com/sbinet/
+[url "git@github.com:go-hep/"]
+	insteadOf = https://github.com/go-hep/
+[alias]
+	change = codereview change
+	gofmt = codereview gofmt
+	mail = codereview mail
+	pending = codereview pending
+	submit = codereview submit
+	sync = codereview sync
+[http]
+	cookiefile = /home/binet/.gitcookies
