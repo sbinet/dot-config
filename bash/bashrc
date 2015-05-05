@@ -5,9 +5,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias ll='ls -lh --color=auto'
-
 #PS1='[\u@\h \W]\$ '
 PS1='\[\e[1;32m\][\A \u@\h \W]\$\[\e[0m\] '
 
@@ -25,6 +22,16 @@ export PATH=$GOPATH/bin:$PATH
 export PATH=$HOME/bin:$PATH
 
 ## general use
+alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto'
+
+alias cp='cp --interactive'
+alias mv='mv --interactive'
+alias rm='rm --interactive'
+
+alias df='df --human-readable'
+alias du='du --human-readable'
+
 alias scpresume="rsync --partial --progress --rsh=ssh"
 
 ## switch overlay displays
