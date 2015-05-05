@@ -1,0 +1,29 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto'
+
+PS1='[\u@\h \W]\$ '
+
+export EDITOR='vim'
+
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+	source /usr/share/bash-completion/bash_completion
+fi
+
+# if [ -f /usr/lib/python3.4/site-packages/powerline/bindings/bash/powerline.sh ]; then
+#     source /usr/lib/python3.4/site-packages/powerline/bindings/bash/powerline.sh
+# fi
+
+# for go
+export GOPATH=$HOME/dev/go/gocode
+export PATH=$GOPATH/bin:$PATH
+
+# local scripts/binaries
+export PATH=$HOME/bin:$PATH
+
