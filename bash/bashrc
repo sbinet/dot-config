@@ -8,7 +8,8 @@
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
 
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
+PS1='\[\e[1;32m\][\A \u@\h \W]\$\[\e[0m\] '
 
 export EDITOR='vim'
 
