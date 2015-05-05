@@ -54,4 +54,3 @@ alias cls="echo -ne '\033c'"
 
 ## for direnv. needs to be LAST
 eval "$(direnv hook bash)"
-
