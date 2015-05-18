@@ -57,7 +57,7 @@ if tty --quiet ; then
 fi
 
 ## clear terminal buffers
-alias cls="echo -ne '\033c'"
+alias cls="reset; echo -ne '\033c'"
 
 ## for direnv. needs to be LAST
 eval "$(direnv hook bash)"
