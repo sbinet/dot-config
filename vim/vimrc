@@ -127,3 +127,11 @@ set laststatus=2
 set wildmode=longest,list,full
 set wildmenu
 
+" make sure we get the proper Ctrl+Left-arrow and +Right escape codes
+set <C-Left>=Od
+set <C-Right>=Oc
+
+"" cycle thru buffers
+:map <C-Right> :bnext<CR>
+:map <C-Left> :bprevious<CR>
+
