@@ -17,6 +17,11 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 	source /usr/share/bash-completion/bash_completion
 fi
 
+# for python
+if [ -f $HOME/.pythonrc.py ]; then
+	export PYTHONSTARTUP=$HOME/.pythonrc.py
+fi
+
 # for go
 export GOPATH=$HOME/dev/go/gocode
 export PATH=$GOPATH/bin:$PATH
