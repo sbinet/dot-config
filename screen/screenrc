@@ -1,0 +1,37 @@
+# bins' .screenrc
+escape ^L^L
+vbell off
+
+# draw that blue and red bar across the bottom of the terminal, with the
+# stuff like the window names and system CPU load.
+hardstatus on
+hardstatus alwayslastline
+#hardstatus string '%{= KW}%-w%{= gW}%50> %n %t %{= KW}%+w%< %{= kG}%-=%{-}'
+hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %l %{..Y} %m/%d %C%a "
+
+
+# let me scroll back some lines
+defscrollback 8000
+
+# wrap lines if larger than col size
+defwrap on
+
+# enable proper scrolling
+termcapinfo xterm* ti@:te@  
+
+# terminfo and termcap for nice 256 color terminal
+term screen-256color
+#term xterm-256color
+
+# allow bold colors
+#attrcolor b ".I"
+
+# tell screen how to set colors. AB = background, AF=foreground
+#termcapinfo mlterm 'Co#256:AB=E[48;5;%dm:AF=E[38;5;%dm'
+
+# erase background with current bg color
+defbce "on"
+
+# Automatically start up a bunch of windows.
+#screen -t "shell" 0
+#screen -t "code" 1 

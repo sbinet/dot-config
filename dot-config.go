@@ -42,6 +42,10 @@ var links = []Symlink{
 		Old: "inputrc",
 	},
 	{
+		New: ".dmrc",
+		Old: "openbox/dmrc",
+	},
+	{
 		New: ".ssh",
 		Old: "ssh",
 	},
@@ -60,6 +64,18 @@ var links = []Symlink{
 	{
 		New: ".xscreensaver",
 		Old: "xresources/xscreensaver",
+	},
+	{
+		New: ".Xauthority",
+		Old: "xresources/authority",
+	},
+	{
+		New: ".Xresources",
+		Old: "xresources/resources",
+	},
+	{
+		New: ".screenrc",
+		Old: "screen/screenrc",
 	},
 }
 

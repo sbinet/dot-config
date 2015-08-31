@@ -1,0 +1,6 @@
+#include ".config/xresources/terminal"
+#include ".config/xresources/urxvt"
+#include ".config/xresources/xpdf"
+! #include ".config/xresources/themes/solarized"
+! #include ".config/xresources/themes/hybrid"
+
