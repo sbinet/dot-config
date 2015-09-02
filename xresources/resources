@@ -1,6 +1,6 @@
-#include "~/.config/xresources/terminal"
-#include "~/.config/xresources/urxvt"
-#include "~/.config/xresources/xpdf"
+#include "/home/binet/.config/xresources/terminal"
+#include "/home/binet/.config/xresources/urxvt"
+#include "/home/binet/.config/xresources/xpdf"
 ! #include ".config/xresources/themes/solarized"
 ! #include ".config/xresources/themes/hybrid"
 
