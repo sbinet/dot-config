@@ -2,12 +2,12 @@ set nocompatible
 filetype off
 
 " set the runtime path to include Vundle and initialize it
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 call vundle#begin()
 
 " let Vundle manage Vundle.
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline'
