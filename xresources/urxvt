@@ -47,8 +47,13 @@ urxvt*urlLauncher:        /usr/bin/chromium
 urxvt*matcher.button:     1
 !! END urlLauncher settings !!
 
-URxvt.font:             xft:Droid Sans Mono for Powerline:pixelsize=11:antialias=true
-URxvt.boldFont:         xft:Droid Sans Mono for Powerline:bold:pixelsize=11:antialias=true
+#ifdef SRVR_zoidberg
+  URxvt.font:             xft:Droid Sans Mono for Powerline:pixelsize=14:antialias=true
+  URxvt.boldFont:         xft:Droid Sans Mono for Powerline:bold:pixelsize=14:antialias=true
+#else
+  URxvt.font:             xft:Droid Sans Mono for Powerline:pixelsize=11:antialias=true
+  URxvt.boldFont:         xft:Droid Sans Mono for Powerline:bold:pixelsize=11:antialias=true
+#endif
 
 URxvt.iconFile: /usr/share/icons/hicolor/scalable/apps/roxterm.svg
 
