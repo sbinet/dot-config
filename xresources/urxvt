@@ -40,12 +40,11 @@ urxvt*secondaryScroll:    true
 urxvt*mapAlert:           true
 !inhibit writing record into the system log file utmp
 urxvt*utmpInhibit:        true
-!! BEGIN urlLauncher settings !!
+
 urxvt*perl-lib:           /usr/lib/urxvt/perl/
-urxvt*perl-ext-common:    default,matcher
+urxvt*perl-ext-common:    default,matcher,resize-font
 urxvt*urlLauncher:        /usr/bin/chromium
 urxvt*matcher.button:     1
-!! END urlLauncher settings !!
 
 #ifdef SRVR_zoidberg
   URxvt.font:             xft:Droid Sans Mono for Powerline:pixelsize=14:antialias=true
@@ -56,6 +55,11 @@ urxvt*matcher.button:     1
 #endif
 
 URxvt.iconFile: /usr/share/icons/hicolor/scalable/apps/roxterm.svg
+
+!!! hot-keys for font sizes
+!!! see: https://wiki.archlinux.org/index.php/Rxvt-unicode#Changing_font_size_on_the_fly
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
 
 ! URxvt*termName:                       string
 ! URxvt*geometry:                       geometry
