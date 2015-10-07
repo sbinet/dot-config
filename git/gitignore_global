@@ -43,3 +43,6 @@ Thumbs.db
 
 # emacs
 *~
+
+# vim
+*.swp
