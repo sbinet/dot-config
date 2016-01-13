@@ -60,7 +60,8 @@ set noerrorbells visualbell t_vb=
 "" support for Go
 ""
 au FileType go au BufWritePre <buffer> GoImports
-au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
+" au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
+au FileType go setlocal formatoptions=cqrot1 ai nofoldenable
 
 " insert mode completion
 set completeopt=menu,longest
@@ -72,7 +73,13 @@ set tabstop=4
 set shiftwidth=4
 
 " maximum with of text that is being inserted.
-set textwidth=80
+" set textwidth=80
+set textwidth=0
+
+" enable wrap:
+" set wrap
+" disable wrap:
+set nowrap
 
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
