@@ -46,3 +46,7 @@ Thumbs.db
 
 # vim
 *.swp
+
+# python
+*.pyc
+
