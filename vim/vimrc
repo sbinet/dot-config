@@ -144,6 +144,7 @@ set <C-Right>=Oc
 :map <C-Right> :bnext<CR>
 :map <C-Left> :bprevious<CR>
 
-"" change the backup directory for swap and backup files (.swp)
-set backupdir=$HOME/.config/vim/vim/backup,/tmp
-set directory=$HOME/.config/vim/vim/backup,/tmp
+"" change the backup directory for backup and swap filesfiles (.swp)
+"" the double // is here so the complete path is encoded into the file name
+set backupdir=$HOME/.config/vim/vim/backup//,/tmp
+set directory=$HOME/.config/vim/vim/backup//,/tmp
