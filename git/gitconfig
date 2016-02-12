@@ -33,3 +33,7 @@
 	sync = codereview sync
 [http]
 	cookiefile = /home/binet/.gitcookies
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
