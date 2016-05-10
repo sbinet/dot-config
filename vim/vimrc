@@ -9,7 +9,7 @@ call vundle#begin()
 " let Vundle manage Vundle.
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
-Plugin 'Valloric/YouCompleteMe'
+"" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline'
 Plugin 'ctrlpvim/ctrlp.vim'
 
@@ -136,6 +136,9 @@ set laststatus=2
 " menu-completion
 set wildmode=longest,list,full
 set wildmenu
+
+" bind C-Space to completion
+inoremap <Nul> <C-x><C-o>
 
 " make sure we get the proper Ctrl+Left-arrow and +Right escape codes
 set <C-Left>=Od
