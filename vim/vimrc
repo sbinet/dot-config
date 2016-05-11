@@ -62,9 +62,9 @@ set cursorline
 
 "" support for Go
 ""
-au FileType go au BufWritePre <buffer> GoImports
 " au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
 au FileType go setlocal formatoptions=cqrot1 ai nofoldenable
+let g:go_fmt_command = "goimports"
 
 " insert mode completion
 set completeopt=menu,longest
