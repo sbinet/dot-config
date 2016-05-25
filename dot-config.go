@@ -77,6 +77,10 @@ var links = []Symlink{
 		New: ".screenrc",
 		Old: "screen/screenrc",
 	},
+	{
+		New: "bin/latex-replace",
+		Old: "scripts/latex-replace",
+	},
 }
 
 func main() {
