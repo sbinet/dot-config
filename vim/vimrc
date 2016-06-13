@@ -126,6 +126,10 @@ set sidescrolloff=5
 
 set nospell
 
+"" accelerate scrolling
+set ttyfast
+set lazyredraw
+
 " always show statusline (useful for powerline)
 set laststatus=2
 
