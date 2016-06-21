@@ -60,6 +60,9 @@ set noerrorbells visualbell t_vb=
 " highlight current line
 set cursorline
 
+"" support for troff/groff
+au BufNewFile,BufRead *.groff set filetype=groff
+
 "" support for Go
 ""
 " au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
