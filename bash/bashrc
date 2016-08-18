@@ -64,5 +64,9 @@ fi
 ## clear terminal buffers
 alias cls="reset; echo -ne '\033c'"
 
+## for cmd/go tab completion
+## gotab comes from github.com/sbinet/gotab
+complete -C gotab -o nospace go
+
 ## for direnv. needs to be LAST
 eval "$(direnv hook bash)"
