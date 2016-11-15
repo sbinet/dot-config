@@ -8,6 +8,9 @@
 ## line wrap on window resize
 shopt -s checkwinsize
 
+## correct env.var. expand
+shopt -s direxpand
+
 #PS1='[\u@\h \W]\$ '
 PS1='\[\e[1;32m\][\A \u@\h \W]\$\[\e[0m\] '
 

@@ -5,12 +5,15 @@ set convert-meta off
 set output-meta on
 
 ## expand commands
-set -x
+#set -x
 
 ## single tab-completion
 set show-all-if-ambiguous on
 
 ## do not bell on tab-completion
 set bell-style none
+
+## enable tilde expansion
+set expand-tilde on
 
 ## EOF ##
