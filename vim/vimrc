@@ -12,6 +12,7 @@ Plugin 'fatih/vim-go'
 "" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/powerline'
 Plugin 'ctrlpvim/ctrlp.vim'
+Bundle 'cespare/vim-toml'
 
 call vundle#end()
 filetype plugin indent on
