@@ -84,9 +84,9 @@ set shiftwidth=4
 set textwidth=0
 
 " enable wrap:
-" set wrap
+set wrap linebreak nolist
 " disable wrap:
-set nowrap
+"set nowrap
 
 " a combination of spaces and tabs are used to simulate tab stops at a width
 " other than the (hard)tabstop
