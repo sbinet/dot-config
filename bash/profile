@@ -6,3 +6,7 @@
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+## better format for 'history'
+## from: https://www.cyberciti.biz/faq/unix-linux-bash-history-display-date-time/
+export HISTTIMEFORMAT="%Y-%m-%d %T "
