@@ -81,6 +81,10 @@ var links = []Symlink{
 		New: "bin/latex-replace",
 		Old: "scripts/latex-replace",
 	},
+	{
+		New: "bin/my-print",
+		Old: "scripts/my-print",
+	},
 }
 
 func main() {
