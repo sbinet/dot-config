@@ -5,6 +5,11 @@ Host *
   GSSAPIDelegateCredentials no
   Compression yes
 
+Host clrssh.in2p3.fr
+	IdentityFile ~/.ssh/lpc_rsa
+	User sbinet
+	ForwardX11 yes
+
 Host svn.cern.ch svn
   IdentityFile ~/.ssh/id_dsa
   PubkeyAuthentication yes
