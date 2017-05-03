@@ -115,3 +115,11 @@ Host ccage*.in2p3.fr
   IdentityFile ~/.ssh/id_dsa
   Protocol 2
   User sbinet
+
+Host lpnclaude.in2p3.fr
+  User carousel
+  Protocol 2
+  IdentityFile ~/.ssh/lpnhe_rsa
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
