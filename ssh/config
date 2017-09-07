@@ -111,10 +111,11 @@ Host git.in2p3.fr
   #GSSAPIAuthentication yes
   #GSSAPIDelegateCredentials yes
 
-Host ccage*.in2p3.fr
-  IdentityFile ~/.ssh/id_dsa
-  Protocol 2
+Host cca*.in2p3.fr
+  Hostname cca.in2p3.fr
   User sbinet
+  IdentityFile ~/.ssh/id_dsa
+  PubkeyAuthentication yes
 
 Host lpnclaude.in2p3.fr
   User carousel
