@@ -3,14 +3,19 @@ filetype off
 
 " set the runtime path to include Vundle and initialize it
 set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+"set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set rtp+=/usr/share/vim/vimfiles/
 call vundle#begin()
 
 " let Vundle manage Vundle.
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
 "" Plugin 'Valloric/YouCompleteMe'
-Plugin 'Lokaltog/powerline'
+"" Plugin 'Lokaltog/powerline'
+Plugin 'tpope/vim-fugitive'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
 Bundle 'cespare/vim-toml'
 
@@ -42,6 +47,27 @@ syntax on
 " let g:solarized_diffmode="normal"
 " let g:solarized_hitrail=0
 " let g:solarized_menu=1
+
+" --- airline ---
+set encoding=utf-8
+let g:airline_theme='powerlineish'
+let g:airline#extensions#hunks#enabled=1
+let g:airline#extensions#branch#enabled=1
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" powerline symbols
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_symbols.branch = ''
+let g:airline_symbols.readonly = ''
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.maxlinenr = ''
+
 
 " --- base16 ---
 
