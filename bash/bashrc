@@ -74,5 +74,14 @@ alias cls="reset; echo -ne '\033c'"
 ## gotab comes from github.com/sbinet/gotab
 complete -C gotab -o nospace go
 
+## to enable powerline-go in the shell
+## function _update_ps1() {
+##     PS1="$(powerline-go -cwd-max-depth 2 -error $?)"
+## }
+## 
+## if [ "$TERM" != "linux" ]; then
+##     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+## fi
+
 ## for direnv. needs to be LAST
 eval "$(direnv hook bash)"
