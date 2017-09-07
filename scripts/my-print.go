@@ -105,7 +105,12 @@ func process(fname string) {
 		log.Fatalf("error copying file to remote print server: %v", err)
 	}
 
-	run("lpr", "-o", "KMDuplex=2Sided", "-o", "media=A4", "-PBat6-1-nb1rv", "file.tmp")
+	run("lpr",
+		"-o", "KMDuplex=2Sided",
+		"-o", "media=A4", "-o", "PageSize=A4",
+		"-PBat6-1-nb1rv",
+		"file.tmp",
+	)
 	run("/bin/rm", "file.tmp")
 }
 
