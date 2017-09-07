@@ -10,14 +10,14 @@ call vundle#begin()
 " let Vundle manage Vundle.
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
-"" Plugin 'Valloric/YouCompleteMe'
-"" Plugin 'Lokaltog/powerline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ctrlpvim/ctrlp.vim'
-Bundle 'cespare/vim-toml'
+Plugin 'cespare/vim-toml'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'zchee/deoplete-go'
 
 call vundle#end()
 filetype plugin indent on
@@ -172,7 +172,16 @@ set wildmode=longest,list,full
 set wildmenu
 
 " bind C-Space to completion
-inoremap <Nul> <C-x><C-o>
+"inoremap <Nul> <C-x><C-o>
+
+" Use deoplete.
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_ignore_case = 0
+if !exists('g:deoplete#omni#input_patterns')
+  let g:deoplete#omni#input_patterns = {}
+endif
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " make sure we get the proper Ctrl+Left-arrow and +Right escape codes
 set <C-Left>=Od
