@@ -1,0 +1,28 @@
+XTerm.termName: xterm-256color
+XTerm.vt100.reverseVideo: true
+XTerm.vt100.locale: true
+
+! fixup backspace key
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+! initial size
+XTerm.vt100.geometry: 80x25
+XTerm.*internalBorder:     2
+XTerm.*shading: 30
+
+! tint background with this color
+XTerm*tintColor:          black
+
+!set to 32-bit for real transparency (compositing required)
+!XTerm*depth:             32
+
+XTerm.vt100.saveLines: 4096
+
+!!! hot-keys for font sizes
+!!! see: https://wiki.archlinux.org/index.php/Rxvt-unicode#Changing_font_size_on_the_fly
+XTerm.resize-font.smaller: C-Down
+XTerm.resize-font.bigger: C-Up
+
+
+

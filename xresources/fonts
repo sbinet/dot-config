@@ -1,0 +1,11 @@
+*font:     -*-Go Mono-*-*-*-*-*-*-*-*-*-*-*-*
+
+#ifdef SRVR_zoidberg
+  *.font:             xft:Go Mono for Powerline:pixelsize=14:antialias=true
+  *.boldFont:         xft:Go Mono for Powerline:bold:pixelsize=14:antialias=true
+#else
+  *.font:             xft:Go Mono for Powerline:pixelsize=11:antialias=true
+  *.boldFont:         xft:Go Mono for Powerline:bold:pixelsize=11:antialias=true
+#endif
+
+
