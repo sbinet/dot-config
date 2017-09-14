@@ -177,6 +177,8 @@ set wildmenu
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 0
+"let g:deoplete#disable_auto_complete = 1
+"let g:deoplete#complete_method = "omnifunc"
 if !exists('g:deoplete#omni#input_patterns')
   let g:deoplete#omni#input_patterns = {}
 endif
@@ -184,12 +186,12 @@ endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " make sure we get the proper Ctrl+Left-arrow and +Right escape codes
-set <C-Left>=Od
-set <C-Right>=Oc
+"set <C-Left>=Od
+"set <C-Right>=Oc
 
 "" cycle thru buffers
-:map <C-Right> :bnext<CR>
-:map <C-Left> :bprevious<CR>
+:map <S-Right> :bnext<CR>
+:map <S-Left> :bprevious<CR>
 
 "" change the backup directory for backup and swap filesfiles (.swp)
 "" the double // is here so the complete path is encoded into the file name
