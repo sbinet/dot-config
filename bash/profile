@@ -5,6 +5,12 @@
 ## for ssh-agent
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+## for urxvt
+userresources=$HOME/.Xresources
+if [ -f "$userresources" ]; then
+    xrdb -load "$userresources"
+fi
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 ## better format for 'history'
