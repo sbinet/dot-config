@@ -19,6 +19,7 @@ const (
 var (
 	a2ps   = flag.Bool("a2ps", false, "runs the a2ps text->PS conversion")
 	server = flag.String("server", lpcServer, "remote print server")
+	queue  = flag.String("printer", "Bat6-1-nb1rv", "remote printer queue")
 
 	tmpdir string
 )
@@ -108,7 +109,7 @@ func process(fname string) {
 	run("lpr",
 		"-o", "KMDuplex=2Sided",
 		"-o", "media=A4", "-o", "PageSize=A4",
-		"-PBat6-1-nb1rv",
+		"-P"+*queue,
 		"file.tmp",
 	)
 	run("/bin/rm", "file.tmp")
