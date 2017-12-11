@@ -30,7 +30,7 @@ alias vim='nvim'
 
 # for go
 export GOPATH=$HOME/dev/go/gocode
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$HOME/sdk/latest/bin:$PATH
 
 # local scripts/binaries
 export PATH=$HOME/bin:$PATH
