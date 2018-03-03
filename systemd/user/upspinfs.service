@@ -1,0 +1,14 @@
+[Unit]
+Description=UpSpin FS daemon
+#Requires=network-online.target
+
+[Service]
+WorkingDirectory=/home/binet/upspin
+ExecStart=/home/binet/dev/go/gocode/bin/upspinfs /home/binet/upspin/root-fs
+Restart=always
+User=binet
+
+[Install]
+WantedBy=default.target
+
+
