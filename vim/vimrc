@@ -197,3 +197,6 @@ inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 "" the double // is here so the complete path is encoded into the file name
 set backupdir=$HOME/.config/vim/vim/backup//,/tmp
 set directory=$HOME/.config/vim/vim/backup//,/tmp
+
+""" HTML
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
