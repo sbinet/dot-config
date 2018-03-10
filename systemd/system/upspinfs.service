@@ -1,6 +1,6 @@
 [Unit]
 Description=UpSpin FS daemon
-#Requires=network-online.target
+Requires=network-online.target
 
 [Service]
 WorkingDirectory=/home/binet/upspin
@@ -9,6 +9,5 @@ Restart=always
 User=binet
 
 [Install]
-WantedBy=default.target
-
+WantedBy=multi-user.target
 
