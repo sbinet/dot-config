@@ -124,3 +124,9 @@ Host lpnclaude.in2p3.fr
   ForwardX11 yes
   ForwardX11Trusted yes
 
+Host alternatiba63.eu
+  User root
+  Protocol 2
+  IdentityFile ~/.ssh/scaleway_rsa
+  ForwardX11 yes
+  ForwardX11Trusted yes
