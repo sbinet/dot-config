@@ -130,3 +130,15 @@ Host alternatiba63.eu
   IdentityFile ~/.ssh/scaleway_rsa
   ForwardX11 yes
   ForwardX11Trusted yes
+
+Host mshort.iihe.ac.be
+	User binet
+	Protocol 2
+	ForwardX11 yes
+	ForwardX11Trusted yes
+
+Host clrwebgohep.in2p3.fr
+  User root
+  Protocol 2
+  ForwardX11 yes
+  ForwardX11Trusted yes
