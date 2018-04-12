@@ -94,6 +94,7 @@ au BufNewFile,BufRead *.groff set filetype=groff
 ""
 " au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
 au FileType go setlocal formatoptions=cqrot1 ai nofoldenable
+let g:go_template_autocreate = 0
 let g:go_fmt_command = "goimports"
 
 " insert mode completion
