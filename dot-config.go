@@ -85,6 +85,10 @@ var links = []Symlink{
 		New: "bin/my-print",
 		Old: "scripts/my-print",
 	},
+	{
+		New: "bin/eduroam-setup",
+		Old: "scripts/eduroam-setup",
+	},
 }
 
 func main() {
