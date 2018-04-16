@@ -89,6 +89,10 @@ var links = []Symlink{
 		New: "bin/eduroam-setup",
 		Old: "scripts/eduroam-setup",
 	},
+	{
+		New: "bin/slim-chromium",
+		Old: "scripts/slim-chromium",
+	},
 }
 
 func main() {
