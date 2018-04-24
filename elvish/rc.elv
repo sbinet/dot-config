@@ -40,6 +40,8 @@ use github.com/zzamboni/elvish-modules/dir
 
 alias:new cd &use=[github.com/zzamboni/elvish-modules/dir] dir:cd
 
+use github.com/xiaq/edit.elv/compl/go
+go:apply
 
 E:LESS = "-i -R"
 
@@ -48,6 +50,9 @@ E:EDITOR = "vim"
 E:LC_ALL = "en_US.UTF-8"
 
 use github.com/zzamboni/elvish-modules/util
+
+## customize prompt
+#use github.com/muesli/elvish-libs/theme/powerline
 
 -exports- = (alias:export)
 
