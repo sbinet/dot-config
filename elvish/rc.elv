@@ -53,6 +53,11 @@ use github.com/zzamboni/elvish-modules/util
 
 ## customize prompt
 #use github.com/muesli/elvish-libs/theme/powerline
+use github.com/zzamboni/elvish-themes/chain
+chain:segment-style[timestamp] = yellow
+chain:prompt-segments = [timestamp su dir arrow]
+chain:prompt-pwd-dir-length = 3
+chain:bold-prompt = $true
 
 -exports- = (alias:export)
 
