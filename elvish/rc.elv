@@ -1,0 +1,3 @@
+
+## for direnv
+use direnv
