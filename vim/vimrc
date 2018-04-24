@@ -18,6 +18,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'cespare/vim-toml'
 Plugin 'Shougo/deoplete.nvim'
 Plugin 'zchee/deoplete-go'
+Plugin 'dmix/elvish.vim'
 
 call vundle#end()
 filetype plugin indent on
