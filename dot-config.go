@@ -93,6 +93,10 @@ var links = []Symlink{
 		New: "bin/slim-chromium",
 		Old: "scripts/slim-chromium",
 	},
+	{
+		New: "bin/update-go-tools",
+		Old: "scripts/update-go-tools",
+	},
 }
 
 func main() {
