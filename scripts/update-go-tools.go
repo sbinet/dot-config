@@ -27,10 +27,8 @@ func main() {
 		"golang.org/x/tools/cmd/gomvpkg",
 		"golang.org/x/tools/cmd/gorename",
 		"golang.org/x/tools/cmd/guru",
-		"golang.org/x/tools/cmd/heapview",
 		"golang.org/x/tools/cmd/present",
 		"golang.org/x/tools/cmd/stringer",
-		"golang.org/x/vgo",
 	} {
 		run("go", "get", "-u", "-v", pkg)
 	}
