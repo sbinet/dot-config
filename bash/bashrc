@@ -84,5 +84,8 @@ complete -C gotab -o nospace go
 ##     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 ## fi
 
+## enable accents
+setxkbmap -option compose:ralt
+
 ## for direnv. needs to be LAST
 eval "$(direnv hook bash)"
