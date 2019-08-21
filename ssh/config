@@ -155,7 +155,7 @@ Host clrwebgohep.in2p3.fr
   ForwardX11 yes
   ForwardX11Trusted yes
 
-Host sbinet.xyz
+Host sbinet.xyz, upspin.sbinet.xyz
   User root
   Protocol 2
   ForwardX11 yes
