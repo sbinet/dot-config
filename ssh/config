@@ -137,6 +137,18 @@ Host mshort.iihe.ac.be
 	ForwardX11 yes
 	ForwardX11Trusted yes
 
+Host clrbinetsrv.in2p3.fr
+  User root
+  Protocol 2
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
+Host clreco.in2p3.fr
+  User root
+  Protocol 2
+  ForwardX11 yes
+  ForwardX11Trusted yes
+
 Host clrwebgohep.in2p3.fr
   User root
   Protocol 2
