@@ -25,7 +25,7 @@ func main() {
 		"golang.org/x/tools/cmd/fiximports",
 		"golang.org/x/tools/cmd/goimports",
 		"golang.org/x/tools/cmd/gomvpkg",
-		"golang.org/x/tools/cmd/gopls",
+		"golang.org/x/tools/gopls",
 		"golang.org/x/tools/cmd/gorename",
 		"golang.org/x/tools/cmd/guru",
 		"golang.org/x/tools/cmd/present",
