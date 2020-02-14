@@ -160,3 +160,12 @@ Host sbinet.xyz, upspin.sbinet.xyz
   Protocol 2
   ForwardX11 yes
   ForwardX11Trusted yes
+
+Host clrtodaq0
+  User mim
+  HostName 193.48.81.203
+  Port 1122
+  IdentityFile ~/.ssh/id_ecdsa
+  PubkeyAuthentication yes
+  ForwardX11 yes
+  ForwardX11Trusted yes
