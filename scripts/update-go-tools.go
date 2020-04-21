@@ -29,7 +29,9 @@ func main() {
 		"golang.org/x/tools/cmd/gorename",
 		"golang.org/x/tools/cmd/guru",
 		"golang.org/x/tools/cmd/present",
+		"golang.org/x/tools/cmd/present2md",
 		"golang.org/x/tools/cmd/stringer",
+		"github.com/rogpeppe/gohack",
 	} {
 		run("go", "get", "-u", "-v", pkg)
 	}
