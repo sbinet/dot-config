@@ -91,6 +91,9 @@ complete -C gotab -o nospace go
 ##     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 ## fi
 
+## to prevent any "'rxvt-unicode-256color': unknown terminal type." error
+export TERM='linux'
+
 ## enable accents
 setxkbmap -option compose:ralt
 
