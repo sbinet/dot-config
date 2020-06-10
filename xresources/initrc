@@ -55,6 +55,10 @@ keychain ~/.ssh/id_ecdsa ~/.ssh/id_rsa ~/.ssh/id_dsa
 [ -f ~/.keychain/$HOSTNAME-sh ] && . ~/.keychain/$HOSTNAME-sh 2>/dev/null
 [ -f ~/.keychain/$HOSTNAME-sh-gpg ] && . ~/.keychain/$HOSTNAME-sh-gpg 2>/dev/null
 
+## ## https://wiki.archlinux.org/index.php/GNOME/Keyring#Using_the_keyring_outside_GNOME
+## eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+## export SSH_AUTH_SOCK
+
 #
 /usr/bin/xscreensaver -no-splash &
 
