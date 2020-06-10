@@ -47,6 +47,7 @@ export BROWSER=/usr/bin/chromium
 
 ## see: archlinx-wiki - X_resources#Getting_started
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xrdb -load ~/.Xresources
 
 ## see: https://wiki.archlinux.org/index.php/SSH_Keys
 ## for ssh-agent support
