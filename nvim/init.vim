@@ -99,6 +99,7 @@ let g:go_template_autocreate = 0
 let g:go_fmt_command = "goimports"
 let g:go_def_mode = "gopls"
 let g:go_info_mode = "gopls"
+let g:go_rename_command = "gopls"
 
 " insert mode completion
 set completeopt=menu,longest
