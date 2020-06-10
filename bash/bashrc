@@ -28,6 +28,9 @@ fi
 # for vim/neovim
 alias vim='nvim'
 
+# for tmux
+alias tmux='TERM=screen-256color tmux'
+
 # for go
 export GOROOT=$HOME/sdk/go
 export GOPATH=$HOME/dev/go/gocode

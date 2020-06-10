@@ -46,8 +46,16 @@ var links = []Symlink{
 		Old: "openbox/dmrc",
 	},
 	{
+		New: ".screenrc",
+		Old: "screen/screenrc",
+	},
+	{
 		New: ".ssh",
 		Old: "ssh",
+	},
+	{
+		New: ".tmux.conf",
+		Old: "tmux/tmux.conf",
 	},
 	{
 		New: ".vim",
@@ -72,10 +80,6 @@ var links = []Symlink{
 	{
 		New: ".Xresources",
 		Old: "xresources/resources",
-	},
-	{
-		New: ".screenrc",
-		Old: "screen/screenrc",
 	},
 	{
 		New: "bin/latex-replace",
