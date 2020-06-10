@@ -66,6 +66,9 @@ alias lxplus="ssh -YC binet@lxplus.cern.ch"
 alias  flx="sshfs binet@lxplus.cern.ch:/afs/cern.ch/user/b/binet /home/binet/fuse-cern"
 alias uflx="fusermount -u /home/binet/fuse-cern"
 
+## PDF
+alias pdf=mupdf
+
 ## get backspace to work everywhere
 ## see: http://www.ibb.net/~anne/keyboard/keyboard.html
 if tty --quiet ; then
