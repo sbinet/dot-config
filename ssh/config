@@ -169,3 +169,8 @@ Host clrtodaq0
   PubkeyAuthentication yes
   ForwardX11 yes
   ForwardX11Trusted yes
+
+Host framagit.org
+  User sbinet
+  IdentityFile ~/.ssh/framagit-id-rsa
+  PubkeyAuthentication yes
