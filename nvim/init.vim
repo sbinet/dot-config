@@ -190,9 +190,9 @@ let g:deoplete#enable_at_startup = 1
 let g:deoplete#enable_ignore_case = 0
 "let g:deoplete#disable_auto_complete = 1
 "let g:deoplete#complete_method = "omnifunc"
-if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
-endif
+"if !exists('g:deoplete#omni#input_patterns')
+"  let g:deoplete#omni#input_patterns = {}
+"endif
 " deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 " inoremap <silent><C-n> <silent>my_complete_func()<CR>
