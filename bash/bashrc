@@ -40,6 +40,9 @@ alias mgo='GO111MODULE=on go'
 # local scripts/binaries
 export PATH=$HOME/bin:$PATH
 
+# thunderbird
+alias thunderbird='LC_TIME=C /usr/bin/thunderbird'
+
 ## general use
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto'
