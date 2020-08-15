@@ -25,6 +25,9 @@ filetype plugin indent on
 
 syntax on
 
+""" for .eml (emails with aerc) we want the default colorscheme.
+autocmd BufEnter,WinEnter,FileType *.eml colorscheme default
+
 " colorscheme Tomorrow-Night
 " ------------------------------------------------------------------
 " Solarized Colorscheme Config
