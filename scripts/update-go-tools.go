@@ -32,6 +32,7 @@ func main() {
 		"golang.org/x/tools/cmd/present2md",
 		"golang.org/x/tools/cmd/stringer",
 		"github.com/rogpeppe/gohack",
+		"rsc.io/rf",
 	} {
 		run("go", "get", "-u", "-v", pkg)
 	}
