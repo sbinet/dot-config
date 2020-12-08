@@ -91,6 +91,9 @@ set cursorline
 "" support for troff/groff
 au BufNewFile,BufRead *.groff set filetype=groff
 
+au FileType mail colorscheme peachpuff
+au FileType mail set syntax=off
+
 "" support for Go
 ""
 " au FileType go setlocal formatoptions=cqrot1 tw=80 ai nofoldenable
