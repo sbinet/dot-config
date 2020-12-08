@@ -30,10 +30,13 @@ func main() {
 		return
 	}
 
+	raw := buf.Bytes()
+
 	switch {
-	case bytes.HasPrefix(buf.Bytes(), []byte(`<!DOCTYPE`)),
-		bytes.HasPrefix(buf.Bytes(), []byte(`<html`)),
-		strings.HasPrefix(http.DetectContentType(buf.Bytes()), "text/html"):
+	case bytes.HasPrefix(raw, []byte(`<!DOCTYPE`)),
+		bytes.HasPrefix(raw, []byte(`<html`)),
+		bytes.Contains(raw, []byte(`<blockquote`)),
+		strings.HasPrefix(http.DetectContentType(raw), "text/html"):
 		htmltext(buf)
 	default:
 		plaintext(buf)
@@ -70,5 +73,4 @@ func htmltext(stdin io.Reader) {
 			err,
 		))
 	}
-
 }
